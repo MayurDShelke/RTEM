@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="places">
+        <item>Mumbai-Pune</item>
+        <item>Mumbai-Alibag</item>
+        <item>Mumbai-Kolahapur</item>
+        <item>Mumbai-Ajanta Cave</item>
+    </string-array>
+    <string-array name="car_models_array">
+        <item>Punch</item>
+        <item>Thar</item>
+        <item>Vitara Brezza</item>
+        <item> Altroz</item>
+        <item> Alto 800</item>
+        <item> Xuv 700</item>
+        <item> Creta </item>
+        <item> Verna</item>
+        <item> Innova Crysta</item>
+        <item>Swift Dzire</item>
+
+        <!-- Add more car model names as needed -->
+    </string-array>
+
+</resources>

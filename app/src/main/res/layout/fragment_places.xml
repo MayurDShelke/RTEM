@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_3">
+
+    <!-- Other views in your fragment layout -->
+
+    <Button
+        android:id="@+id/buttonPlaceActivity"
+        android:layout_width="393dp"
+        android:layout_height="163dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="399dp"
+        android:text="Special Places"
+        android:textSize="40dp" />
+
+    <Button
+        android:id="@+id/buttonHotelActivity"
+        android:layout_width="match_parent"
+        android:layout_height="163dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="419dp"
+        android:text="Find Restaurants"
+        android:textSize="40dp" />
+
+</RelativeLayout>

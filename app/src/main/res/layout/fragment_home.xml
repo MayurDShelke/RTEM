@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/map_fragment"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/map_fragment"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="3dp"
+        android:queryHint="Search Destination"
+        app:iconifiedByDefault="false" >
+
+        <EditText
+            android:id="@+id/distanceEditText"
+            android:layout_width="16dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="9dp"
+            android:layout_marginEnd="369dp"
+            android:layout_marginBottom="357dp"
+            android:hint="Distance (in km)"
+            android:inputType="numberDecimal" />
+    </androidx.appcompat.widget.SearchView>
+
+    <TextView
+        android:id="@+id/distance_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_view"
+        android:layout_margin="16dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:visibility="gone" />
+
+    <!-- Your EditText fields and Button for expense calculation below -->
+
+
+    <EditText
+        android:id="@+id/tripTitleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="303dp"
+        android:hint="Trip Title"
+        android:inputType="text" />
+
+    <Spinner
+        android:id="@+id/carModelSpinner"
+        android:layout_width="391dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="523dp"
+        android:layout_marginEnd="0dp"
+        android:hint="Select Car Model" />
+
+    <EditText
+        android:id="@+id/tollEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="124dp"
+        android:hint="Toll Expense"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/foodCostEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="75dp"
+        android:hint="Food Cost"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="26dp"
+        android:text="Calculate Expense" />
+
+    <TextView
+        android:id="@+id/totalExpenseTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="8dp"
+        android:text="Total Expense: "
+        android:textStyle="bold" />
+
+</RelativeLayout>
+
